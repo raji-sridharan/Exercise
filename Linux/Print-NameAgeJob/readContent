@@ -1,0 +1,17 @@
+#!/bin/bash
+# Author: Rajarajeshwari Sridharan
+# Date: 16/06/2022
+# Description: Read from "content.txt" and print it
+# Date Modified: 16/06/2022
+
+input='content.txt'
+i=1
+while read line;
+do	
+	if [[ -n $line ]]
+	then
+		details=($line)
+		echo "${details[0]}(${details[1]}) - ${details[2]}"
+	fi
+	i=$((i+1))
+done < $input
