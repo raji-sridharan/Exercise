@@ -1,0 +1,12 @@
+#!/bin/bash
+# Author: Rajarajeshwari Sridharan
+# Date: 16/06/2022
+# Description: Printing all products of given company
+# Date Modified: 16/06/2022
+
+input='jsonfile'
+for i in $*
+do
+	echo $i
+	echo `jq --arg v $i '.[$v]' $input`
+done
