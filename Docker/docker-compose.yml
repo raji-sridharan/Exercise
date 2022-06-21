@@ -1,0 +1,16 @@
+version: "3"
+services:
+  nginx:
+    image: nginx
+    ports:
+      - "8080:80"
+    networks: 
+      - bridge-network
+  redis:
+    image: redis
+    ports:
+      - "8085:6379"
+    networks:
+      - bridge-network
+networks:
+  bridge-network:
