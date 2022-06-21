@@ -1,0 +1,88 @@
+  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>GPA Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body  style="background-color: #d4ebf2 !important;";>
+    <nav class="nav" style="background-color: #32aeb1;">
+        <div id="navmenu">
+            <a href="gpa.html" >GPA Calculator</a>
+            <a href="cgpa.html" >CGPA Calculator</a>
+        </div>
+    </nav>
+
+    <div class="main">
+        <form style="padding: 3%;">
+            <center>
+                <p style="font-weight: bolder;margin-left: 2%;margin-top: 0%;margin-bottom: 3%; color: crimson;">Enter Grade and Credit</p>
+            </center>
+                <p style="display: inline;margin-left: 42%;">Grade</p>
+                <p style="display: inline;margin-left: 11%;">Credit</p>
+                <div id="half1gpa">
+                    <label for="g1">Subject 1</label>
+                    <select id="g1">
+                        <option value="O">O</option>
+                        <option value="A+">A<sup>+</sup></option>
+                        <option value="A">A</option>
+                        <option value="B+">B<sup>+</sup></option>
+                        <option value="B">B</option>
+                        <option value="Fail">Fail</option>
+                      </select><br><br>
+                    <label for="g2">Subject 2</label>
+                    <select id="g2">
+                        <option value="O">O</option>
+                        <option value="A+">A<sup>+</sup></option>
+                        <option value="A">A</option>
+                        <option value="B+">B<sup>+</sup></option>
+                        <option value="B">B</option>
+                        <option value="Fail">Fail</option>
+                      </select><br><br>
+                    <label for="g3">Subject 3</label>
+                    <select id="g3">
+                        <option value="O">O</option>
+                        <option value="A+">A<sup>+</sup></option>
+                        <option value="A">A</option>
+                        <option value="B+">B<sup>+</sup></option>
+                        <option value="B">B</option>
+                        <option value="Fail">Fail</option>
+                      </select><br><br>
+                    <label for="g4">Subject 4</label>
+                    <select id="g4">
+                        <option value="O">O</option>
+                        <option value="A+">A<sup>+</sup></option>
+                        <option value="A">A</option>
+                        <option value="B+">B<sup>+</sup></option>
+                        <option value="B">B</option>
+                        <option value="Fail">Fail</option>
+                      </select><br><br>
+                    <label for="g5">Subject 5</label>
+                    <select id="g5">
+                        <option value="O">O</option>
+                        <option value="A+">A<sup>+</sup></option>
+                        <option value="A">A</option>
+                        <option value="B+">B<sup>+</sup></option>
+                        <option value="B">B</option>
+                        <option value="Fail">Fail</option>
+                      </select><br><br>
+                </div>
+                <div id="half2gpa">
+                    <input type="text" id="c1" value=""><br><br>
+                    <input type="text" id="c2" value=""><br><br>
+                    <input type="text" id="c3" value=""><br><br>
+                    <input type="text" id="c4" value=""><br><br>
+                    <input type="text" id="c5" value=""><br><br>
+                <center>    
+                    <button type="button" class="btn-go" onclick="javascript:calculategpa()" style="margin-left: -114%;">Calculate</button><br><br>
+                    <label for="result" style="margin-right: 1%;font-weight: bolder;margin-top: 1%;margin-left: -120%;">GPA</label>
+                    <input type="text" id="result" value="-" style="text-align: center;">
+                </center>
+        </form>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+
+</html>

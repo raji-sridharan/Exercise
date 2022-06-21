@@ -1,0 +1,57 @@
+body
+{
+    margin: 0%;
+    font-family: 'Noto Sans JP', sans-serif !important;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-size: x-large;
+    font-weight: bold;
+    padding-bottom: 1%;
+    padding-top: 1%;
+    margin-left: 5%;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+a:hover{
+    color: darkblue;
+}
+#navmenu
+{
+    display: flex;
+    justify-content: center;
+    margin-left: -5%;
+}
+.btn-go
+{
+    padding: 10px;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+.btn-go:hover{
+    background-color: #008CBA;
+    color: white;
+}
+#half1{
+    margin-left: 25%;
+    margin-top: 5%;
+}
+#half2{
+    margin-left: 55%;
+    margin-top: -193px;
+}
+#half1gpa{
+    margin-left: 35%;
+    margin-top: 3%;
+}
+#half2gpa{
+    margin-left: 52%;
+    margin-top: -243px;
+}
+#half1gpa label{
+    margin-right: 5%;
+    margin-left: -3%;
+}
